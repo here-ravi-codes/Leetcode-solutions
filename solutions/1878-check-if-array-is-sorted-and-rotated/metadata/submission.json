@@ -1,0 +1,10 @@
+{
+  "accepted_at": "2025-01-02T12:44:22Z",
+  "code": "class Solution {\n    public boolean check(int[] nums) {\n        int count = 0;\n        for(int i = 1; i < nums.length; i++){\n            if((nums[i] < nums[i-1])){\n                count++;\n            }\n        }\n        if(nums[0] < nums[nums.length -1]){\n            count++;\n        }\n        return count<=1;\n    }\n}",
+  "language": "java",
+  "problem_id": "1878",
+  "slug": "check-if-array-is-sorted-and-rotated",
+  "submission_id": "1495082374",
+  "title": "Check If Array Is Sorted And Rotated",
+  "url": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/"
+}

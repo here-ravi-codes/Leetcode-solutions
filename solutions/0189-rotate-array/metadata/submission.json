@@ -1,0 +1,10 @@
+{
+  "accepted_at": "2025-01-03T13:03:22Z",
+  "code": "class Solution {\n    public void rotate(int[] nums, int k) {\n        int n = nums.length;\n        k = k % n;\n        reverseSection(nums, 0, n-1);\n        reverseSection(nums, 0, k-1);\n        reverseSection(nums, k, n-1);\n    }\n    public static void reverseSection(int[] nums, int start, int end){\n        while(start < end){\n            int temp = nums[start];\n            nums[start] = nums[end];\n            nums[end] = temp;\n            start++;\n            end--;\n        }\n    }\n}",
+  "language": "java",
+  "problem_id": "189",
+  "slug": "rotate-array",
+  "submission_id": "1496253797",
+  "title": "Rotate Array",
+  "url": "https://leetcode.com/problems/rotate-array/"
+}

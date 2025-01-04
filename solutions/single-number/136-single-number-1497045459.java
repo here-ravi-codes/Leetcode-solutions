@@ -1,0 +1,9 @@
+class Solution {
+    public int singleNumber(int[] nums) {
+        int xor1 = nums[0];
+        for(int i = 1; i < nums.length; i++){
+            xor1 = xor1 ^ nums[i];
+        }
+        return xor1;
+    }
+}
